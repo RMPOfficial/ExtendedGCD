@@ -6,7 +6,7 @@ This program is a simple realisation of the Extended Euclidean algorithm.
 ## Features
 - Calculating the greatest common divisor
 - Calculating the modular inverse of a number
-- Finding (y*m) + (x*a) = 1 using the Extended Euclidean algorithm
+- Finding (y * m) + (x * a) = 1 using the Extended Euclidean algorithm
 
 ## Usage
 1. Choose the number that will be 'a'
