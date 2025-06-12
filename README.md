@@ -1,7 +1,7 @@
 # ExtendedGCD
 
 ## Description
-This program is a simple realisation of the Extended Euclidean algorithm.
+This program is a simple realisation of the Extended Euclidean algorithm (using *Boost:\:multiprecision::cpp_int*).
 
 ## Features
 - Calculating the greatest common divisor
