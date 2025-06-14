@@ -20,6 +20,7 @@ enum Flag : uint16_t {
 
 static string CharArrToStringCheckNum(char* strold, bool modulo) {
 	bool badnumber = false;
+	bool breakflag = false;
 	string str = string(strold);
 	size_t str_len = str.size();
 
@@ -45,9 +46,14 @@ static string CharArrToStringCheckNum(char* strold, bool modulo) {
 		for (size_t i = 0; i < str_len; i++) {
 			char c = str[i];
 			if (c < '0' || c > '9') {
-				continue;
+				breakflag = true;
+				break;
 			}
-		} badnumber = false;
+		}
+		if (breakflag) {
+			breakflag = false; continue;
+		}
+		badnumber = false;
 	} return str;
 }
 
